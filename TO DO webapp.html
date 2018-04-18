@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO DO APP</title>
+	<meta href-equiv="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	&#10005;
+	<style type="text/css">
+		.commonprop
+		{
+			height:500px;
+			width: 400px
+		}
+	</style>
+	<script type="text/javascript">
+		function additem()
+		{
+			var d1=document.createElement("input");
+
+			
+			//var t1=document.createTextNode(document.getElementById("item").value);
+			
+			//this is my content
+			var content= document.getElementById("item").value;
+			console.log(content);
+			d1.value= content;
+
+			// d1.appendChild(t1);
+			var addchild=document.getElementById("inputfield");
+			addchild.appendChild(d1);
+
+
+		}
+	</script>
+</head>
+<body>
+	<div class="row">
+		<div class="col-lg-6 commonprop jumbotron text-center" style="background-color: lavenderblush;">
+			<h2 align="center">TODAY'S LIST</h2>
+			<div id="inputfield">
+			</div>
+		</div>
+		<div class="col-lg-6 commonprop jumbotron text-center" style="background-color: lavender">
+			<label><b>Add items : <b></label><input type="text" id="item" placeholder="Enter the text"></b><br>
+			<input type="button" value="ADD" onclick="additem()"></button>
+			<p id="hid" style="display:none; ">hey,i am paragraph</p>
+		</div>
+		
+	</div>
+</body>
+</html>
